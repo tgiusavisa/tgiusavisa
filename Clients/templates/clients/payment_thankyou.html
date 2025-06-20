@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container text-center p-5">
+    <h1 class="fw-bolder fs-1 main-heading">Thank You!</h1>
+    <p class="lead">Your payment proof has been submitted successfully.</p>
+    <div class="alert alert-success mt-4">
+        <h4>Next Steps:</h4>
+        <p>We will verify your payment and update the status within 15-20 minutes.</p>
+        <p>You'll receive a confirmation email at <strong>{{ payment.email }}</strong>.</p>
+    </div>
+    <a href="/" class="btn btn-primary btn-lg mt-3">Return to Home</a>
+</div>
+{% endblock %}
